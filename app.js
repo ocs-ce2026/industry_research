@@ -89,12 +89,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    const resetBtn = document.getElementById('reset-btn');
+
+    // Reset Form
+    const resetForm = () => {
+        if (confirm('全ての入力を削除してリセットしますか？')) {
+            localStorage.removeItem('industry_research_v1');
+            textareas.forEach(t => t.value = '');
+            updateProgress();
+            showToast('リセットしました');
+        }
+    };
+
     // Event Listeners
     textareas.forEach(textarea => {
         textarea.addEventListener('input', updateProgress);
     });
 
     saveBtn.addEventListener('click', saveData);
+    resetBtn.addEventListener('click', resetForm);
     exportBtn.addEventListener('click', exportData);
     window.addEventListener('scroll', updateActiveNav);
 

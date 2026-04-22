@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,21 @@
     <meta name="description" content="税理士業界への理解を深めるための8つの問い。ヒントを元に自分の考えを言語化しましょう。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Sidebar Navigation -->
     <aside class="sidebar">
         <div class="logo-area">
-            <h1>TAX ACCOUNTANT<br>RESEARCH</h1>
-            <p>税理士業界 業界研究</p>
+            <div class="brand-logos">
+                <div class="brand-logo"><img src="o-haracs.png" alt="Ohara Logo"></div>
+                <div class="brand-logo"><img src="career-enjin.png" alt="Career Engine Logo"></div>
+            </div>
+            <div class="brand-text">大原キャリアスタッフ<br><span>キャリアエンジン</span></div>
         </div>
         <nav>
             <ul class="nav-links">
@@ -24,7 +31,7 @@
                 <li class="nav-item"><a href="#section-3"><span>③ 1日の働き方</span></a></li>
                 <li class="nav-item"><a href="#section-4"><span>④ 繁忙期のギャップ</span></a></li>
                 <li class="nav-item"><a href="#section-5"><span>⑤ 求められる能力</span></a></li>
-                <li class="nav-item"><a href="#section-6"><span>⑥ 向いている人</span></a></li>
+                <li class="nav-item"><a href="#section-6"><span>⑥ 適性を探る</span></a></li>
                 <li class="nav-item"><a href="#section-7"><span>⑦ キャリアの先</span></a></li>
                 <li class="nav-item"><a href="#section-8"><span>⑧ 最後の問い</span></a></li>
             </ul>
@@ -43,7 +50,7 @@
     <!-- Main Content -->
     <main class="main-content">
         <form id="workbook-form">
-            
+
             <!-- Section 1 -->
             <section id="section-1" class="workbook-section">
                 <div class="section-header">
@@ -62,7 +69,7 @@
                 </div>
                 <div class="deep-dive">
                     <h4><i>💡</i> 深掘り</h4>
-                    <p>そのお客さんにとって「良い税理士」ってどんな人？自分はそのニーズに応えられそう？</p>
+                    <p>そのお客さんにとって「良い税理士」ってどんな人？自分はそのニーズにどのように応えられそう？</p>
                 </div>
             </section>
 
@@ -83,7 +90,7 @@
                 </div>
                 <div class="deep-dive">
                     <h4><i>💡</i> 深掘り</h4>
-                    <p>自分は“作業”としてやりたい？それとも“支援”として関わりたい？</p>
+                    <p>単なる“作業”だけが仕事？それとも“支援”として関わりたい？</p>
                 </div>
             </section>
 
@@ -111,7 +118,7 @@
                 </div>
                 <div class="hint-box">
                     <ul class="hint-list">
-                        <li>忙しい時期はいつ？どれくらい大変？（残業はどれくらい？プレッシャーはある？）</li>
+                        <li>忙しい時期はいつ？どれくらい大変？（残業はどれくらいか？覚悟はある？）</li>
                     </ul>
                 </div>
                 <div class="input-area">
@@ -192,16 +199,35 @@
             </section>
 
             <div class="actions">
+                <button type="button" id="reset-btn" class="btn btn-outline"
+                    style="color: var(--accent); border-color: var(--accent);">入力をリセット</button>
+                <div style="flex: 1;"></div>
                 <button type="button" id="save-btn" class="btn btn-primary">進捗を保存</button>
                 <button type="button" id="export-btn" class="btn btn-outline">出力を保存 (Text)</button>
             </div>
         </form>
+
+        <footer class="main-footer">
+            <div class="footer-logo">
+                <div class="brand-text" style="font-size: 0.9rem; text-align: center; width: 100%;">大原キャリアスタッフ /
+                    キャリアエンジン</div>
+            </div>
+            <p class="footer-description">
+                大原キャリアスタッフ/キャリアエンジンは、「資格の大原」グループの就職・転職エージェントとして、税理士業界に特化したサポートを行っています。
+            </p>
+            <div class="footer-links">
+                <a href="https://www.o-hara-cs.com/" target="_blank">公式サイト：https://www.o-hara-cs.com/</a>
+            </div>
+            <p class="copyright">© Ohara CareerStaff,Inc. All rights reserved.</p>
+        </footer>
     </main>
 
-    <div id="toast" style="position: fixed; bottom: 20px; right: 20px; background: #334155; color: white; padding: 10px 20px; border-radius: 8px; display: none; z-index: 1000;">
+    <div id="toast"
+        style="position: fixed; bottom: 20px; right: 20px; background: #334155; color: white; padding: 10px 20px; border-radius: 8px; display: none; z-index: 1000;">
         保存しました
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
