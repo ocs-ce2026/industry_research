@@ -409,14 +409,19 @@ textarea:focus {
     }
 
     .logo-area {
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
         flex-direction: row;
         justify-content: center;
+        gap: 6px;
+    }
+
+    .brand-logo {
+        width: 24px;
     }
 
     .brand-text {
         display: block;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .nav-links {
@@ -468,11 +473,14 @@ textarea:focus {
 
     .hint-box {
         padding: 1rem;
+        margin-bottom: 1rem;
     }
 
     textarea {
-        min-height: 150px;
+        min-height: 200px;
         padding: 1rem;
+        background-color: white;
+        border-color: #cbd5e1;
     }
 
     .actions {
