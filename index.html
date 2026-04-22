@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【税理士業界】業界研究ワークブック</title>
+    <meta name="description" content="税理士業界への理解を深めるための8つの問い。ヒントを元に自分の考えを言語化しましょう。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="logo-area">
+            <h1>TAX ACCOUNTANT<br>RESEARCH</h1>
+            <p>税理士業界 業界研究</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#section-1" class="active"><span>① 顧客から考える</span></a></li>
+                <li class="nav-item"><a href="#section-2"><span>② 仕事の本質</span></a></li>
+                <li class="nav-item"><a href="#section-3"><span>③ 1日の働き方</span></a></li>
+                <li class="nav-item"><a href="#section-4"><span>④ 繁忙期のギャップ</span></a></li>
+                <li class="nav-item"><a href="#section-5"><span>⑤ 求められる能力</span></a></li>
+                <li class="nav-item"><a href="#section-6"><span>⑥ 向いている人</span></a></li>
+                <li class="nav-item"><a href="#section-7"><span>⑦ キャリアの先</span></a></li>
+                <li class="nav-item"><a href="#section-8"><span>⑧ 最後の問い</span></a></li>
+            </ul>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-label">
+                <span>進捗率</span>
+                <span id="progress-percent">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <form id="workbook-form">
+            
+            <!-- Section 1 -->
+            <section id="section-1" class="workbook-section">
+                <div class="section-header">
+                    <span class="section-number">①</span>
+                    <h2 class="section-title">顧客から考える（かなり重要）</h2>
+                </div>
+                <div class="hint-box">
+                    <ul class="hint-list">
+                        <li>お客さんはどんな人？（法人？個人？どんな業種？）</li>
+                        <li>経営者はどんな悩みを持っている？</li>
+                        <li>税理士に何を期待している？</li>
+                    </ul>
+                </div>
+                <div class="input-area">
+                    <textarea name="q1" id="q1" placeholder="あなたの考えを入力してください..."></textarea>
+                </div>
+                <div class="deep-dive">
+                    <h4><i>💡</i> 深掘り</h4>
+                    <p>そのお客さんにとって「良い税理士」ってどんな人？自分はそのニーズに応えられそう？</p>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section-2" class="workbook-section">
+                <div class="section-header">
+                    <span class="section-number">②</span>
+                    <h2 class="section-title">仕事の本質を捉える</h2>
+                </div>
+                <div class="hint-box">
+                    <ul class="hint-list">
+                        <li>税理士事務所の仕事って「何のために存在している」？（申告のため？それとも経営サポート？）</li>
+                        <li>数字を扱うことの意味は？</li>
+                    </ul>
+                </div>
+                <div class="input-area">
+                    <textarea name="q2" id="q2" placeholder="あなたの考えを入力してください..."></textarea>
+                </div>
+                <div class="deep-dive">
+                    <h4><i>💡</i> 深掘り</h4>
+                    <p>自分は“作業”としてやりたい？それとも“支援”として関わりたい？</p>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section-3" class="workbook-section">
+                <div class="section-header">
+                    <span class="section-number">③</span>
+                    <h2 class="section-title">1日の働き方を想像する</h2>
+                </div>
+                <div class="hint-box">
+                    <ul class="hint-list">
+                        <li>1日のスケジュールはどんな感じ？（パソコン作業がどれくらい？人と話す時間はどれくらい？）</li>
+                    </ul>
+                </div>
+                <div class="input-area">
+                    <textarea name="q3" id="q3" placeholder="あなたの考えを入力してください..."></textarea>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section id="section-4" class="workbook-section">
+                <div class="section-header">
+                    <span class="section-number">④</span>
+                    <h2 class="section-title">繁忙期と日常のギャップ</h2>
+                </div>
+                <div class="hint-box">
+                    <ul class="hint-list">
+                        <li>忙しい時期はいつ？どれくらい大変？（残業はどれくらい？プレッシャーはある？）</li>
+                    </ul>
+                </div>
+                <div class="input-area">
+                    <textarea name="q4" id="q4" placeholder="あなたの考えを入力してください..."></textarea>
+                </div>
+            </section>
+
+            <!-- Section 5 -->
+            <section id="section-5" class="workbook-section">
+                <div class="section-header">
+                    <span class="section-number">⑤</span>
+                    <h2 class="section-title">求められる能力</h2>
+                </div>
+                <div class="hint-box">
+                    <ul class="hint-list">
+                        <li>どんなスキルが必要？（正確性？スピード？コミュニケーション？ITスキルはどれくらい必要？）</li>
+                    </ul>
+                </div>
+                <div class="input-area">
+                    <textarea name="q5" id="q5" placeholder="あなたの考えを入力してください..."></textarea>
+                </div>
+                <div class="deep-dive">
+                    <h4><i>💡</i> 深掘り</h4>
+                    <p>自分はどこが強みになりそう？足りない部分はどう補う？</p>
+                </div>
+            </section>
+
+            <!-- Section 6 -->
+            <section id="section-6" class="workbook-section">
+                <div class="section-header">
+                    <span class="section-number">⑥</span>
+                    <h2 class="section-title">向いている人の特徴</h2>
+                </div>
+                <div class="hint-box">
+                    <ul class="hint-list">
+                        <li>どんな人が活躍してる？（性格・考え方・習慣は？）</li>
+                    </ul>
+                </div>
+                <div class="input-area">
+                    <textarea name="q6" id="q6" placeholder="あなたの考えを入力してください..."></textarea>
+                </div>
+            </section>
+
+            <!-- Section 7 (Originally 8) -->
+            <section id="section-7" class="workbook-section">
+                <div class="section-header">
+                    <span class="section-number">⑦</span>
+                    <h2 class="section-title">キャリアの先を考える</h2>
+                </div>
+                <div class="hint-box">
+                    <ul class="hint-list">
+                        <li>その仕事を続けた先に何がある？（税理士資格取得？独立？企業経理？）</li>
+                    </ul>
+                </div>
+                <div class="input-area">
+                    <textarea name="q7" id="q7" placeholder="あなたの考えを入力してください..."></textarea>
+                </div>
+            </section>
+
+            <!-- Section 8 (Originally 10) -->
+            <section id="section-8" class="workbook-section">
+                <div class="section-header">
+                    <span class="section-number">⑧</span>
+                    <h2 class="section-title">最後の問い（めっちゃ重要）</h2>
+                </div>
+                <div class="hint-box">
+                    <ul class="hint-list">
+                        <li>「なぜ税理士業界を選ぶのか？」（他の業界じゃダメ？何に魅力を感じてる？）</li>
+                    </ul>
+                </div>
+                <div class="input-area">
+                    <textarea name="q8" id="q8" placeholder="あなたの考えを入力してください..."></textarea>
+                </div>
+                <div class="deep-dive">
+                    <h4><i>💡</i> 深掘り</h4>
+                    <p>その理由、面接で説明できる？</p>
+                </div>
+            </section>
+
+            <div class="actions">
+                <button type="button" id="save-btn" class="btn btn-primary">進捗を保存</button>
+                <button type="button" id="export-btn" class="btn btn-outline">出力を保存 (Text)</button>
+            </div>
+        </form>
+    </main>
+
+    <div id="toast" style="position: fixed; bottom: 20px; right: 20px; background: #334155; color: white; padding: 10px 20px; border-radius: 8px; display: none; z-index: 1000;">
+        保存しました
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
