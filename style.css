@@ -63,6 +63,20 @@ body {
     letter-spacing: -0.01em;
 }
 
+.brand-text {
+    font-family: 'Inter', 'Outfit', sans-serif;
+    font-weight: 700;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    line-height: 1.25;
+}
+
+.brand-text span {
+    font-size: 0.95rem;
+    color: #1a202c;
+    display: block;
+}
+
 .nav-links {
     list-style: none;
     flex: 1;
