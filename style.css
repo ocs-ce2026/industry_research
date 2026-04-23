@@ -48,42 +48,19 @@ body {
     flex-direction: column;
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.sidebar-header {
     margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-light);
 }
 
-.brand-logos {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.brand-logo {
-    width: 32px;
-    height: auto;
-}
-
-.brand-logo img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.brand-text {
-    font-family: 'Inter', 'Outfit', sans-serif;
-    font-weight: 700;
+.sidebar-title {
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.5;
     color: var(--text-main);
-    font-size: 0.9rem;
-    line-height: 1.25;
-}
-
-.brand-text span {
-    font-size: 0.95rem;
-    color: #1a202c;
-    display: block;
+    letter-spacing: -0.01em;
 }
 
 .nav-links {
@@ -369,13 +346,11 @@ textarea:focus {
         padding: 2rem 0.5rem;
     }
 
-    .logo-area {
-        flex-direction: column;
+    .sidebar-header {
         text-align: center;
     }
 
-    .brand-text,
-    .progress-container {
+    .sidebar-title {
         display: none;
     }
 
@@ -408,20 +383,16 @@ textarea:focus {
         backdrop-filter: blur(8px);
     }
 
-    .logo-area {
-        margin-bottom: 0.75rem;
-        flex-direction: row;
-        justify-content: center;
-        gap: 6px;
+    .sidebar-header {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border);
+        text-align: center;
     }
 
-    .brand-logo {
-        width: 24px;
-    }
-
-    .brand-text {
+    .sidebar-title {
         display: block;
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     .nav-links {
