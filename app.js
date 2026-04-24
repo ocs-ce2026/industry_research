@@ -53,12 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
         let content = "業界研究ワークブック（税理士業界）\n";
         content += "====================================\n\n";
         
-        sections.forEach((section, index) => {
-            const title = section.querySelector('.section-title').textContent;
-            const answer = section.querySelector('textarea').value;
-            content += `${index + 1}. ${title}\n`;
-            content += `回答:\n${answer || '(未入力)'}\n`;
-            content += "------------------------------------\n\n";
+        sections.forEach((section) => {
+            const titleEl = section.querySelector('.section-title');
+            const textarea = section.querySelector('textarea');
+            
+            if (titleEl && textarea) {
+                const title = titleEl.textContent;
+                const answer = textarea.value;
+                content += `${title}\n`;
+                content += `回答:\n${answer || '(未入力)'}\n`;
+                content += "------------------------------------\n\n";
+            }
         });
 
         const blob = new Blob([content], { type: 'text/plain' });
