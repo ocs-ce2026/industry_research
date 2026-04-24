@@ -150,6 +150,18 @@ body {
     box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
 }
 
+.fixed-industry {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary);
+    background: var(--bg-main);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
 .input-group textarea {
     min-height: 120px;
     resize: vertical;
