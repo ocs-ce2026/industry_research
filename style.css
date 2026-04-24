@@ -313,6 +313,7 @@ textarea:focus {
 
 /* Footer Styling */
 .main-footer {
+    margin-top: 6rem;
     background: white;
     border-top: 1px solid var(--border);
     padding: 2rem 0;

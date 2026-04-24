@@ -399,9 +399,10 @@ body {
 
 /* Footer */
 .main-footer {
+    margin-top: 6rem;
     background: white;
     border-top: 1px solid var(--border);
-    padding: 6rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
