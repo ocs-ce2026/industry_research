@@ -313,9 +313,9 @@ textarea:focus {
 
 /* Footer Styling */
 .main-footer {
-    margin-top: 5rem;
-    padding: 3rem 0;
+    background: white;
     border-top: 1px solid var(--border);
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -330,10 +330,10 @@ textarea:focus {
 
 .footer-description {
     max-width: 600px;
-    margin: 0 auto 1.5rem;
-    font-size: 0.85rem;
+    margin: 0 auto 1rem;
     color: var(--text-muted);
-    line-height: 1.8;
+    font-size: 0.75rem;
+    line-height: 1.6;
 }
 
 .footer-links {

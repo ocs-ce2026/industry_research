@@ -40,11 +40,10 @@ body {
 .hero {
     background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
     color: white;
-    padding: 6rem 0 4rem;
+    padding: 3.5rem 0 2.5rem;
     text-align: center;
     position: relative;
-    margin-bottom: 4rem;
-    clip-path: ellipse(150% 100% at 50% 0%);
+    margin-bottom: 2.5rem;
 }
 
 .badge {
@@ -62,7 +61,7 @@ body {
 
 .hero-title {
     font-family: 'Outfit', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
