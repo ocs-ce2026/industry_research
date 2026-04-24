@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>業界研究ワーク①：気になる業界を言葉にする</title>
+    <meta name="description" content="気になる業界を具体的に言語化するためのステップアップ・ワークシート。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="work1.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <!-- <span class="badge">Workbook 01</span> -->
+            <h1 class="hero-title">業界研究はなぜ大切？</h1>
+            <!-- <p class="hero-subtitle">気になる業界を言葉にする</p> -->
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- STEP 1 Section -->
+        <section class="section animate-in">
+            <div class="section-header">
+                <h2 class="section-title">まずは書いてみる</h2>
+                <p class="section-desc">直感で構いません。まずは頭にあるイメージを書き出してみましょう。</p>
+            </div>
+
+            <div class="worksheet-card">
+                <form id="worksheet-form">
+                    <div class="input-group">
+                        <label for="industry-name">業界名</label>
+                        <input type="text" id="industry-name" name="industry" placeholder="例：IT業界、広告業界など">
+                    </div>
+                    <div class="input-group">
+                        <label for="why-interested">なぜ気になっている？</label>
+                        <textarea id="why-interested" name="why" placeholder="きっかけや興味を持った理由を教えてください"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="job-image">どんな仕事をしているイメージ？</label>
+                        <textarea id="job-image" name="image" placeholder="日々の業務や役割のイメージを書いてみましょう"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="why-suits">自分に合いそうだと思う理由</label>
+                        <textarea id="why-suits" name="suits" placeholder="自分の強みや価値観と重なる部分はどこですか？"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" id="save-btn" class="btn btn-primary">保存する</button>
+                        <button type="button" id="clear-btn" class="btn btn-outline">クリア</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Example Section -->
+        <section class="section animate-in">
+            <div class="section-header">
+                <h2 class="section-title">比較でわかる「伝わる」書き方</h2>
+                <p class="section-desc">抽象的な表現から、自分の思考が伝わる具体的な表現へ。</p>
+            </div>
+
+            <div class="example-grid">
+                <!-- NG Example -->
+                <div class="example-card ng">
+                    <div class="card-badge">NG例：浅くなりがちなパターン</div>
+                    <div class="example-content">
+                        <div class="example-item">
+                            <span class="item-label">業界名</span>
+                            <p>IT業界</p>
+                        </div>
+                        <div class="example-item">
+                            <span class="item-label">なぜ気になる？</span>
+                            <p>将来性がありそうだから</p>
+                        </div>
+                        <div class="example-item">
+                            <span class="item-label">仕事のイメージ</span>
+                            <p>パソコンを使う仕事</p>
+                        </div>
+                        <div class="example-item">
+                            <span class="item-label">合いそうな理由</span>
+                            <p>なんとなく興味がある</p>
+                        </div>
+                    </div>
+                    <div class="example-footer">
+                        <p class="advice">👉 抽象的で、「なぜ？」を聞かれると止まりやすい状態です。</p>
+                    </div>
+                </div>
+
+                <!-- OK Example -->
+                <div class="example-card ok">
+                    <div class="card-badge">OK例：面接でも使えるレベル</div>
+                    <div class="example-content">
+                        <div class="example-item">
+                            <span class="item-label">業界名</span>
+                            <p>IT業界（特にWebサービス企業）</p>
+                        </div>
+                        <div class="example-item">
+                            <span class="item-label">なぜ気になる？</span>
+                            <p>日常的に使っているサービスの裏側に興味を持ったため。特に〇〇のアプリを使った経験から、ユーザーの行動をもとにサービスが改善されている点に魅力を感じた。</p>
+                        </div>
+                        <div class="example-item">
+                            <span class="item-label">仕事のイメージ</span>
+                            <p>エンジニアや企画職が連携して、ユーザーにとって使いやすいサービスを作る仕事</p>
+                        </div>
+                        <div class="example-item">
+                            <span class="item-label">合いそうな理由</span>
+                            <p>普段から「どうすればもっと使いやすくなるか」を考えることが多く、その視点を活かせると感じたため</p>
+                        </div>
+                    </div>
+                    <div class="example-footer">
+                        <p class="advice">👉 「具体的な体験」と「自分の思考」が結びついているのがポイントです。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Dive Hints -->
+        <section class="section animate-in">
+            <div class="section-header">
+                <h2 class="section-title">💡 深めるためのヒント</h2>
+                <p class="section-desc">言葉に詰まったら、以下の問いかけを自分に投げてみてください。</p>
+            </div>
+            <div class="hint-grid">
+                <div class="hint-card">
+                    <div class="hint-icon">🔍</div>
+                    <h3>「なんでそう思った？」</h3>
+                    <p>理由をもう一度深掘りしてみる。一つ一つの言葉を疑ってみる。</p>
+                </div>
+                <div class="hint-card">
+                    <div class="hint-icon">👟</div>
+                    <h3>実際の体験と結びつける</h3>
+                    <p>使ったサービスやアルバイト、日常の出来事からヒントを探す。</p>
+                </div>
+                <div class="hint-card">
+                    <div class="hint-icon">⚖️</div>
+                    <h3>「他の業界・職種ではダメな理由」</h3>
+                    <p>他の業界との違いを考えると、その業界の独自性が見えてきます。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals / Benefits -->
+        <section class="section animate-in">
+            <div class="goal-box">
+                <h2 class="goal-title">🎯 このワークで得られること</h2>
+                <div class="goal-flow">
+                    <div class="flow-item from">「なんとなく興味がある」</div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-item to">「理由を持って選べている」</div>
+                </div>
+                <ul class="benefit-list">
+                    <li>志望動機の解像度が上がる</li>
+                    <li>業界選びの軸が明確になる</li>
+                    <li>面接での受け答えに自信が持てる</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="closing-message animate-in">
+            <p>完璧に書こうとしなくて大丈夫です。<br>まずは<strong>「自分の言葉で書くこと」</strong>が一番大事です。</p>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="brand-display">
+                <span class="brand-text">大原キャリアスタッフ / キャリアエンジン</span>
+            </div>
+            <p class="footer-desc">大原キャリアスタッフ/キャリアエンジンは、「資格の大原」グループの就職・転職エージェントとして、業界に特化したサポートを行っています。</p>
+            <div class="footer-links">
+                <a href="https://www.o-hara-cs.com/" target="_blank">公式サイト：https://www.o-hara-cs.com/</a>
+            </div>
+            <p class="copyright">© Ohara CareerStaff,Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">保存しました！</div>
+
+    <script src="work1.js"></script>
+</body>
+
+</html>
