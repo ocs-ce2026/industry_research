@@ -55,14 +55,21 @@ document.addEventListener('DOMContentLoaded', () => {
         
         sections.forEach((section) => {
             const titleEl = section.querySelector('.section-title');
-            const textarea = section.querySelector('textarea');
+            const questionBlocks = section.querySelectorAll('.question-block');
             
-            if (titleEl && textarea) {
-                const title = titleEl.textContent;
-                const answer = textarea.value;
-                content += `${title}\n`;
-                content += `回答:\n${answer || '(未入力)'}\n`;
-                content += "------------------------------------\n\n";
+            if (titleEl && questionBlocks.length > 0) {
+                content += `${titleEl.textContent}\n`;
+                content += "------------------------------------\n";
+                
+                questionBlocks.forEach(block => {
+                    const questionEl = block.querySelector('p');
+                    const textarea = block.querySelector('textarea');
+                    
+                    if (questionEl && textarea) {
+                        content += `【質問】${questionEl.textContent}\n`;
+                        content += `【回答】\n${textarea.value || '(未入力)'}\n\n`;
+                    }
+                });
             }
         });
 
