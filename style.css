@@ -61,15 +61,13 @@ body {
     gap: 8px;
 }
 
-.brand-logo {
-    width: 32px;
-    height: auto;
-}
-
-.brand-logo img {
-    width: 100%;
-    height: auto;
-    display: block;
+.sidebar-title {
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--text-main);
+    letter-spacing: -0.01em;
 }
 
 .brand-text {
