@@ -17,21 +17,18 @@
 <body>
     <!-- Sidebar Navigation -->
     <aside class="sidebar">
-        <div class="logo-area">
-            <div class="brand-logos">
-                <div class="brand-logo"><img src="o-haracs.png" alt="Ohara Logo"></div>
-                <div class="brand-logo"><img src="career-enjin.png" alt="Career Engine Logo"></div>
-            </div>
-            <div class="brand-text">大原キャリアスタッフ<br><span>キャリアエンジン</span></div>
+        <div class="sidebar-header">
+            <h1 class="sidebar-title">税理士業界志望者向け<br>業界研究ワークブック</h1>
         </div>
         <nav>
             <ul class="nav-links">
-                <li class="nav-item"><a href="#section-1" class="active"><span>1. 顧客から考える</span></a></li>
-                <li class="nav-item"><a href="#section-2"><span>2. 仕事の本質</span></a></li>
-                <li class="nav-item"><a href="#section-3"><span>3. 繁忙期のギャップ</span></a></li>
-                <li class="nav-item"><a href="#section-4"><span>4. 求められる能力</span></a></li>
-                <li class="nav-item"><a href="#section-5"><span>5. 向いている人の特徴</span></a></li>
-                <li class="nav-item"><a href="#section-6"><span>6. 最後の問い</span></a></li>
+                <li class="nav-item"><a href="#section-0" class="active"><span>0. 業界研究はなぜ大切？</span></a></li>
+                <li class="nav-item"><a href="#section-1"><span>1. 税理士の仕事について</span></a></li>
+                <li class="nav-item"><a href="#section-2"><span>2. 顧客から見た税理士とは？</span></a></li>
+                <li class="nav-item"><a href="#section-3"><span>3. 仕事の本質を捉える</span></a></li>
+                <li class="nav-item"><a href="#section-4"><span>4. 繁忙期について</span></a></li>
+                <li class="nav-item"><a href="#section-5"><span>5. 求められる能力と適性</span></a></li>
+                <li class="nav-item"><a href="#section-6"><span>6. 税理士業界を志望する理由</span></a></li>
             </ul>
         </nav>
         <div class="progress-container">
@@ -49,112 +46,155 @@
     <main class="main-content">
         <form id="workbook-form">
 
+            <!-- Section 0 -->
+            <section id="section-0" class="workbook-section">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="section-number">0.</span> 業界研究はなぜ大切？</h2>
+                </div>
+                <div
+                    style="background-color: var(--hint-bg); border: 1px solid var(--hint-border); padding: 1.5rem; border-radius: var(--radius); margin-bottom: 2rem;">
+                    <p style="margin: 0;">業界研究を始める前に、まずは「なぜそれが必要なのか」を整理するとスムーズです。<br>
+                        まずは簡単なワークにチャレンジしてみましょう。</p>
+                </div>
+                <div class="input-area" style="text-align: center; padding: 20px 0;">
+                    <a href="work1.html" class="btn btn-primary"
+                        style="display: inline-block; text-decoration: none; color: white;">別ページでワークを行う</a>
+                </div>
+            </section>
+
             <!-- Section 1 -->
             <section id="section-1" class="workbook-section">
                 <div class="section-header">
-                    <h2 class="section-title"><span class="section-number">1.</span> 顧客視点で考える</h2>
+                    <h2 class="section-title"><span class="section-number">1.</span>税理士の仕事について</h2>
                 </div>
-                <div class="hint-box">
-                    <ul class="hint-list">
-                        <li>お客さんはどんな人？（法人？個人？どんな業種？）</li>
-                        <li>経営者はどんな悩みを持っている？</li>
-                        <li>税理士に何を期待している？</li>
-                    </ul>
+
+                <div class="question-block" style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">顧客はどんな人？</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q1_1" id="q1_1" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
-                <div class="input-area">
-                    <textarea name="q1" id="q1" placeholder="あなたの考えを入力してください..."></textarea>
+
+                <div class="question-block" style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">顧客はどんな悩みを持っている？</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q1_2" id="q1_2" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
-                <div class="deep-dive">
-                    <h4><i>💡</i> 深掘り</h4>
-                    <p>顧問先のニーズに、どのように応えたい？どのような存在でありたい？</p>
+
+                <div class="question-block" style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">税理士に何を期待している？</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q1_3" id="q1_3" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
+
             </section>
 
             <!-- Section 2 -->
             <section id="section-2" class="workbook-section">
                 <div class="section-header">
-                    <h2 class="section-title"><span class="section-number">2.</span> 仕事の本質を捉える</h2>
+                    <h2 class="section-title"><span class="section-number">2.</span> 顧客から見た税理士とは？</h2>
                 </div>
-                <div class="hint-box">
-                    <ul class="hint-list">
-                        <li>税理士事務所の仕事って「何のために存在している」？（申告のため？それとも経営サポート？）</li>
-                        <li>数字を扱うことの意味は？</li>
-                    </ul>
+
+
+                <div class="question-block" style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">あなたの場合、どんな人に自分のお金や税金・資産について相談したいですか？？</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q2_1" id="q2_1" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
-                <div class="input-area">
-                    <textarea name="q2" id="q2" placeholder="あなたの考えを入力してください..."></textarea>
+
+                <div class="question-block" style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">第一印象だと、どのような人が理想的？</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q2_2" id="q2_2" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
-                <div class="deep-dive">
-                    <h4><i>💡</i> 深掘り</h4>
-                    <p>単なる“作業”だけが仕事？顧問先に対する“支援”とは？</p>
+
+                <div class="question-block">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">話すときの態度や知識は？どんな人なら相談しやすい？</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q2_3" id="q2_3" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
             </section>
+
             <!-- Section 3 -->
             <section id="section-3" class="workbook-section">
                 <div class="section-header">
-                    <h2 class="section-title"><span class="section-number">3.</span> 繁忙期と日常のギャップ</h2>
+                    <h2 class="section-title"><span class="section-number">3.</span> 仕事の本質を捉える</h2>
                 </div>
-                <div class="hint-box">
-                    <ul class="hint-list">
-                        <li>忙しい時期はいつ？どれくらい大変だと想像できる？</li>
-                    </ul>
-                </div>
-                <div class="input-area">
-                    <textarea name="q3" id="q3" placeholder="あなたの考えを入力してください..."></textarea>
+
+                <div class="question-block">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">
+                        税理士業は”専門知識を活かしたサービス業”です。<br>顧客はどのような人で、どんなことを私たちに期待しているでしょうか？</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q3_1" id="q3_1" placeholder="セクション1・2を踏まえて、あなたの考えをまとめてみましょう..."
+                            style="min-height: 200px;"></textarea>
+                    </div>
                 </div>
             </section>
 
             <!-- Section 4 -->
             <section id="section-4" class="workbook-section">
                 <div class="section-header">
-                    <h2 class="section-title"><span class="section-number">4.</span> 求められる能力</h2>
+                    <h2 class="section-title"><span class="section-number">4.</span> 繁忙期について</h2>
                 </div>
-                <div class="hint-box">
-                    <ul class="hint-list">
-                        <li>どんなスキルが必要？（正確性？スピード？コミュニケーション？ITスキルはどれくらい必要？）</li>
-                    </ul>
-                </div>
-                <div class="input-area">
-                    <textarea name="q4" id="q4" placeholder="あなたの考えを入力してください..."></textarea>
-                </div>
-                <div class="deep-dive">
-                    <h4><i>💡</i> 深掘り</h4>
-                    <p>自分のどんなところが強みになりそう？足りない部分はどう補う？</p>
+
+                <div class="question-block">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">
+                        1年の中で特に忙しくなる時期を「繁忙期」と呼びます。税理士業界特有の繁忙期はいつでしょうか？<br>その理由も考え、これから自身が携わっていく仕事についての理解を深めましょう。</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q4_2" id="q4_2" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
             </section>
 
             <!-- Section 5 -->
             <section id="section-5" class="workbook-section">
                 <div class="section-header">
-                    <h2 class="section-title"><span class="section-number">5.</span> 向いている人の特徴</h2>
+                    <h2 class="section-title"><span class="section-number">5.</span> 求められる能力と適性</h2>
                 </div>
-                <div class="hint-box">
-                    <ul class="hint-list">
-                        <li>どんな人が活躍してる？（性格・考え方・習慣は？）</li>
-                    </ul>
+                <div class="question-block" style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">どんなスキルが必要で、どんな人が活躍している？（正確性？スピード？コミュニケーション？）</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q5_1" id="q5_1" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
-                <div class="input-area">
-                    <textarea name="q5" id="q5" placeholder="あなたの考えを入力してください..."></textarea>
+
+                <div class="question-block">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">自分のどんなところが強みになりそう？足りない部分はどう補う？</p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q5_3" id="q5_3" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
             </section>
 
             <!-- Section 6 -->
             <section id="section-6" class="workbook-section">
                 <div class="section-header">
-                    <h2 class="section-title"><span class="section-number">6.</span> 最後の問い</h2>
+                    <h2 class="section-title"><span class="section-number">6.</span>税理士業界を志望する理由</h2>
                 </div>
-                <div class="hint-box">
-                    <ul class="hint-list">
-                        <li>「なぜ税理士業界を選ぶのか？」（他の業界じゃダメ？何に魅力を感じてる？）</li>
-                    </ul>
+                <div class="question-block" style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 0.5rem; font-weight: 600;">
+                        「なぜ税理士業界を選ぶのか？」（他の業界じゃダメ？何に魅力を感じてる？）<br>面接で必ずと言っても良いほど聞かれる質問の一つです。<br>「なぜ税理士業界を選んだのか」を自分の言葉で説明できるようにしましょう。
+                    </p>
+                    <div class="input-area" style="margin-bottom: 0;">
+                        <textarea name="q6_1" id="q6_1" placeholder="あなたの考えを入力してください..."
+                            style="min-height: 120px;"></textarea>
+                    </div>
                 </div>
-                <div class="input-area">
-                    <textarea name="q6" id="q6" placeholder="あなたの考えを入力してください..."></textarea>
-                </div>
-                <div class="deep-dive">
-                    <h4><i>💡</i> 深掘り</h4>
-                    <p>面接でどう説明出来ますか？</p>
-                </div>
+
             </section>
 
             <div class="actions">
@@ -163,14 +203,13 @@
                 <div style="flex: 1;"></div>
                 <button type="button" id="save-btn" class="btn btn-primary">進捗を保存</button>
                 <button type="button" id="copy-btn" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">入力をコピー</button>
-                <button type="button" id="export-btn" class="btn btn-outline">出力を保存 (Text)</button>
+                <button type="button" id="export-btn" class="btn btn-outline">出力を保存 (Text形式)</button>
             </div>
         </form>
 
         <footer class="main-footer">
             <div class="footer-logo">
-                <div class="brand-text" style="font-size: 1.2rem; text-align: center; width: 100%;">大原キャリアスタッフ /
-                    キャリアエンジン</div>
+                <div class="brand-text">大原キャリアスタッフ / キャリアエンジン</div>
             </div>
             <p class="footer-description">
                 大原キャリアスタッフ/キャリアエンジンは、「資格の大原」グループの就職・転職エージェントとして、税理士業界に特化したサポートを行っています。
