@@ -399,10 +399,9 @@ body {
 
 /* Footer */
 .main-footer {
-    margin-top: 6rem;
     background: white;
     border-top: 1px solid var(--border);
-    padding: 2rem 0;
+    padding: 5rem 0 3rem;
     text-align: center;
 }
 
@@ -411,17 +410,16 @@ body {
 }
 
 .brand-text {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 800;
     color: var(--text-main);
 }
 
 .footer-desc {
     max-width: 600px;
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem;
     color: var(--text-muted);
-    font-size: 0.75rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .footer-links a {

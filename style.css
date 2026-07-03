@@ -48,10 +48,17 @@ body {
     flex-direction: column;
 }
 
-.sidebar-header {
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid var(--primary-light);
+}
+
+.brand-logos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .sidebar-title {
@@ -209,11 +216,6 @@ body {
     border-radius: 4px;
 }
 
-.question-box::before {
-    content: "Question";
-    background-color: var(--primary); /* Optional: different color to distinguish from HINT */
-}
-
 .hint-list {
     list-style: none;
 }
@@ -318,10 +320,9 @@ textarea:focus {
 
 /* Footer Styling */
 .main-footer {
-    margin-top: 6rem;
-    background: white;
+    margin-top: 5rem;
+    padding: 3rem 0;
     border-top: 1px solid var(--border);
-    padding: 2rem 0;
     text-align: center;
 }
 
@@ -336,10 +337,10 @@ textarea:focus {
 
 .footer-description {
     max-width: 600px;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
-    font-size: 0.75rem;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .footer-links {
@@ -366,11 +367,13 @@ textarea:focus {
         padding: 2rem 0.5rem;
     }
 
-    .sidebar-header {
+    .logo-area {
+        flex-direction: column;
         text-align: center;
     }
 
-    .sidebar-title {
+    .brand-text,
+    .progress-container {
         display: none;
     }
 
@@ -403,16 +406,15 @@ textarea:focus {
         backdrop-filter: blur(8px);
     }
 
-    .sidebar-header {
+    .logo-area {
         margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 1px solid var(--border);
-        text-align: center;
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .sidebar-title {
+    .brand-text {
         display: block;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .nav-links {
@@ -464,14 +466,11 @@ textarea:focus {
 
     .hint-box {
         padding: 1rem;
-        margin-bottom: 1rem;
     }
 
     textarea {
-        min-height: 200px;
+        min-height: 150px;
         padding: 1rem;
-        background-color: white;
-        border-color: #cbd5e1;
     }
 
     .actions {
